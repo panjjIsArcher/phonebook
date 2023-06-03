@@ -9,6 +9,7 @@ import { users } from "./assets/mock/mock";
 import { User } from "./types/type";
 export default defineComponent({
   components: { Phonebook },
+  name:"App",
   data() {
     return {
       users

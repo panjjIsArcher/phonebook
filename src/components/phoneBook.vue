@@ -18,6 +18,7 @@ import { List, User } from "../types/type"
 import { PropType, defineComponent } from "vue";
 import { transform } from "../utils/transform"
 export default defineComponent({
+    name:"PhoneBook",
     props: {
         users: {
             type: Array as PropType<Array<User>>,
