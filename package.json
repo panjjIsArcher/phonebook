@@ -11,12 +11,12 @@
     "type": "git",
     "url": "https://github.com/panjjIsArcher/phonebook.git"
   },
+  "files": ["dist"],
   "dependencies": {
     "core-js": "^3.8.3",
     "pinyin-pro": "^3.14.0",
     "vue": "^3.2.13"
   },
-  "files": ["dist"],
   "prepublishOnly": "npm run build",
   "author": "panjiajie 251907882@qq.com",
   "license": "MIT",
