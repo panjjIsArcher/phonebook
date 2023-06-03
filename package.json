@@ -1,17 +1,27 @@
 {
   "name": "phonebook-simple",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panjjIsArcher/phonebook.git"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "pinyin-pro": "^3.14.0",
     "vue": "^3.2.13"
   },
+  "files": ["dist"],
+  "prepublishOnly": "npm run build",
+  "author": "panjiajie 251907882@qq.com",
+  "license": "MIT",
+  "keywords": ["phonebook"],
+  "description":"a components for mobile",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
