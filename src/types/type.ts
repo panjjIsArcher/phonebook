@@ -2,4 +2,11 @@ interface User {
   name: string;
 }
 
-export { User };
+interface List {
+  group: {
+    name: string;
+  }[];
+  phonetic: string;
+}
+
+export { User, List };
