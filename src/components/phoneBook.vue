@@ -4,7 +4,7 @@
             <li v-for="i in list" :key="i.phonetic">
                 <h5>{{ i.phonetic }}</h5>
                 <ul>
-                    <li v-for="user in i.group" :key="user.name" @click="nodeClick(i)">
+                    <li v-for="user in i.group" :key="user.name" @click="nodeClick(user)">
                         {{ user.name }}
                     </li>
                 </ul>
