@@ -1,7 +1,7 @@
 <template>
     <div class="phone-book">
         <ul>
-            <li v-for="user in list" :key="user.name">
+            <li v-for="user in users" :key="user.name">
                 {{ user.name }}
             </li>
         </ul>
@@ -14,13 +14,14 @@ import { PropType, defineComponent } from "vue";
 
 export default defineComponent({
     props: {
-        list: {
+        users: {
             type: Array as PropType<Array<User>>,
-            default: () => []
+            default: () => [],
+            required: true
         }
     },
-    computed:{
-        users(){
+    computed: {
+        list() {
             return []
         }
     }
